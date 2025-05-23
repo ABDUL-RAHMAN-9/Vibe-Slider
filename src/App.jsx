@@ -1,33 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function App()
+{
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="container">
+        <div className="cursor"><p></p></div>
+        <div className="story-img">
+          <div className="img">
+            <img src="./assets/story-1.png" alt="" />
+          </div>
+        </div>
+
+        <div className="story-content">
+          <div className="row">
+            <div className="indices">
+              <div className="index"><div className="index-highlight"></div></div>
+              <div className="index"><div className="index-highlight"></div></div>
+              <div className="index"><div className="index-highlight"></div></div>
+              <div className="index"><div className="index-highlight"></div></div>
+              <div className="index"><div className="index-highlight"></div></div>
+              <div className="index"><div className="index-highlight"></div></div>
+            </div>
+            <div className="profile">
+              <div className="profile-icon">
+                <img src="./assets/profile-1.png" alt="" />
+              </div>
+              <div className="profile-name">
+                <p>Behance</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="title">
+              <div className="title-row"><h1>Showcasing creative</h1></div>
+              <div className="title-row"><h1>Portfolios and projects</h1></div>
+              <div className="title-row"><h1>from top designers</h1></div>
+            </div>
+            <div className="link">
+              <a href="behance.net" target='_blank'>Read More</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
