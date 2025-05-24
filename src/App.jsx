@@ -1,4 +1,6 @@
 import './App.css'
+import storyImage from './assets/story-1.png';
+import profileImage from './assets/profile-1.png';
 
 function App()
 {
@@ -8,7 +10,7 @@ function App()
         <div className="cursor"><p></p></div>
         <div className="story-img">
           <div className="img">
-            <img src="./assets/story-1.png" alt="" />
+            <img src={storyImage} alt="" />
           </div>
         </div>
 
@@ -24,7 +26,7 @@ function App()
             </div>
             <div className="profile">
               <div className="profile-icon">
-                <img src="./assets/profile-1.png" alt="" />
+                <img src={profileImage} alt="" />
               </div>
               <div className="profile-name">
                 <p>Behance</p>
